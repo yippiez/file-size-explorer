@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Folder Size Explorer</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+</head>
+
+<body class="bg-pink-50">
+    <div class="container flex justify-center  w-full h-full mx-auto px-4">
+        <form hx-post="/ls" hx-swap="outerHTML" class="bg-white shadow-md rounded-lg p-10 absolute top-1/4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">
+                Type your path and press enter to begin
+            </label>
+            <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text" name="path" placeholder="Path">
+            <input type="submit" value="Submit"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 mt-2 rounded focus:outline-none focus:shadow-outline">
+        </form>
+
+
+    </div>
+</body>
