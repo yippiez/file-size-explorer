@@ -6,7 +6,7 @@ This is a simple web application that allows you to explore the size of a folder
 - Uvicorn `pip install "uvicorn[standard]"`
 
 # Beware
-This application is a amalgamation of code thats thrown in until it works. It is not meant to be used in production.
+This application is a amalgamation of code, that was created by throwing in code until it worked. It is not meant to be used ~~in production~~.
 
 # To run the application
 uvicorn main:app --reload
